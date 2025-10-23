@@ -1,0 +1,37 @@
+[package]
+name = "module-registry"
+version = "0.1.0"
+edition = "2021"
+authors = ["Red Asgard <hello@redasgard.com>"]
+license = "MIT"
+description = "Dynamic module/plugin registry with compile-time discovery and runtime instantiation"
+repository = "https://github.com/redasgard/module-registry"
+keywords = ["plugin", "module", "registry", "dynamic", "extensibility"]
+categories = ["development-tools", "api-bindings"]
+readme = "README.md"
+
+[dependencies]
+# Compile-time registration
+inventory = "0.3"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Async traits
+async-trait = "0.1"
+
+# Optional tracing
+tracing = { version = "0.1", optional = true }
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["full", "test-util"] }
+
+[features]
+default = []
+tracing = ["dep:tracing"]
+
+[lib]
+name = "module_registry"
+path = "src/lib.rs"
+
