@@ -3,6 +3,7 @@
 [![Crates.io](https://img.shields.io/crates/v/module-registry.svg)](https://crates.io/crates/module-registry)
 [![Documentation](https://docs.rs/module-registry/badge.svg)](https://docs.rs/module-registry)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE-MIT)
+[![Test Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/redasgard/module-registry)
 
 Dynamic module/plugin registry with compile-time discovery and runtime instantiation for Rust.
 
@@ -300,7 +301,7 @@ cargo run --example plugin_system
 
 ## Origin
 
-Extracted from [Valkra](https://github.com/asgardtech/valkra), a blockchain security auditing platform where it manages dynamic loading of 40+ blockchain analyzers, language processors, and security tools.
+Extracted from [Red Asgard](https://github.com/redasgard), a security platform where it manages dynamic loading of analyzers, language processors, and security tools.
 
 ## License
 
